@@ -3,13 +3,18 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="style.css")
     title= title
   body
-    h1= "Add new Message"
-    form(action="/new", method="post")
-      label(for="user") User
-      input(id="user" name="user" type="text" required)
-      label(for="message") Message
-      textarea(id="message" name="message", cols="30", rows="10" required)
-      button add
-      a(href="/") back
+    header
+      h1= title
+      h2= "Add a new Message"
+    main
+      form(action="/new", method="post")
+        label(for="user") User
+        input(id="user" name="user" type="text" required)
+        label(for="message") Message
+        textarea(id="message" name="message", cols="30", rows="10" required)
+        div(class="options")
+          a(href="/" class="back-btn") back
+          button(class="add-btn") add
