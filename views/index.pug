@@ -9,6 +9,7 @@ html(lang="en")
     ul
       each message in messages
         li
-          p Message: #{message.text}
           p User: #{message.user}
           p Date: #{message.added.date} #{message.added.time}
+          p Message: #{message.text}
+    a(href="/new") Add new Message

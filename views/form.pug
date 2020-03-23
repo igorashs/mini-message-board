@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title= title
+  body
+    h1= "Add new Message"
+    form(action="/new", method="post")
+      label(for="user") User
+      input(id="user" name="user" type="text" required)
+      label(for="message") Message
+      textarea(id="message" name="message", cols="30", rows="10" required)
+      button add
+      a(href="/") back

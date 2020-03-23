@@ -31,8 +31,29 @@ const messages = [
   }
 ];
 
+router.use(express.urlencoded({ extended: true }));
+
 router.get('/', (req, res, next) => {
   res.render('index', { title, messages });
+});
+
+router.get('/new', (req, res, next) => {
+  res.render('form', { title });
+});
+
+router.post('/new', (req, res, next) => {
+  const date = new Date();
+
+  messages.push({
+    text: req.body.message,
+    user: req.body.user,
+    added: {
+      date: formatDate(date),
+      time: formatTime(date)
+    }
+  });
+
+  res.redirect('/');
 });
 
 module.exports = router;
