@@ -9,6 +9,9 @@
     "devstart": "nodemon app.js",
     "serverstart": "DEBUG=mini-message-board:* npm run devstart"
   },
+  "engines": {
+    "node": "13.10.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/igorashs/mini-message-board.git"
