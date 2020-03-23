@@ -1,0 +1,33 @@
+{
+  "name": "mini-message-board",
+  "version": "1.0.0",
+  "description": "A mini message board",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "start-debug": "DEBUG=mini-message-board:* npm start",
+    "devstart": "nodemon app.js",
+    "serverstart": "DEBUG=mini-message-board:* npm run devstart"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorashs/mini-message-board.git"
+  },
+  "keywords": [
+    "Express",
+    "nodejs"
+  ],
+  "author": "Igorashs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/igorashs/mini-message-board/issues"
+  },
+  "homepage": "https://github.com/igorashs/mini-message-board#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
