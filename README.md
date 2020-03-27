@@ -7,3 +7,7 @@
 ## Assignment
 
 > Make a mini message board using express
+
+## License
+
+This project is licensed under the MIT License
